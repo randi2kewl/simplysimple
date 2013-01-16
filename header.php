@@ -20,31 +20,34 @@ conditionizr.com/docs.php
 </head>
 <body <?php body_class(); ?>>
 <div id="top-border"></div>
-	<!-- Header -->
-	<header>
-	
+
+	<div id="main-container">
+		
+		<!-- Header -->
+		<header>
+		
+			<!-- Wrapper -->
+			<div class="wrapper">
+			
+				<!-- Logo -->
+				<div id="logo">
+					<a href="<?php echo home_url(); ?>">randi<span class="gray">miller</span></a>
+				</div>
+				<!-- /Logo -->
+				
+				<!-- Nav -->
+				<nav>
+					<?php html5blank_nav(); ?>
+				</nav>
+				<!-- /Nav -->
+				
+				<br class="clear">
+				
+			</div>
+			<!-- /Wrapper -->
+		
+		</header>
+		<!-- /Header -->
+		
 		<!-- Wrapper -->
 		<div class="wrapper">
-		
-			<!-- Logo -->
-			<div id="logo">
-				<a href="<?php echo home_url(); ?>">randi<span class="gray">miller</span></a>
-			</div>
-			<!-- /Logo -->
-			
-			<!-- Nav -->
-			<nav>
-				<?php html5blank_nav(); ?>
-			</nav>
-			<!-- /Nav -->
-			
-			<br class="clear">
-			
-		</div>
-		<!-- /Wrapper -->
-	
-	</header>
-	<!-- /Header -->
-	
-	<!-- Wrapper -->
-	<div class="wrapper">

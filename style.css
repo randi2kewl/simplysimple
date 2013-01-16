@@ -60,7 +60,7 @@ nav { font: 1.5em 'OpenSansBold', Arial, sans-serif;}
 nav a { color: #999;}
 nav a:hover {color: #50A1D3;}
 
-#top-border { width: 100%; height: 30px; background: #50A1D3; position: fixed; z-index: 2;}
+#top-border { width: 100%; height: 30px; background: #50A1D3; position: fixed; z-index: 2; top:0;}
 
 section > h1 { color: #999; border-bottom: 2px solid #50A1D3;}
 
@@ -73,6 +73,9 @@ ul { padding: 0;}
 .reply { border-bottom: 1px solid #50A1D3; margin-bottom: 10px;}
 textarea { margin: 30px 0;}
 .post-categories { list-style-type: none;}
+
+#main-container { max-width:1280px; margin-top: 0; padding-top: 0;}
+footer {clear:both; text-align: center;}
 
 /* =============================================================================
    Structure
@@ -104,7 +107,26 @@ textarea { margin: 30px 0;}
 }
 
 /* 1024px and greater */
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 950px) {
+
+	header > .wrapper { 
+		position: relative;
+		left: 0;
+		float: none;
+		margin: 50px auto;
+		text-align: center;
+	}
+
+	.wrapper { width: 100%;}
+
+	header > nav { width: 100%; }
+
+	.menu > ul li { display: inline; width: 10%; font-size: 1em; margin-right: 10%; }
+	.menu > ul li:nth-child(n+4) {display: none;}
+
+	#main-container > .wrapper { margin: 40px 5%; float: none; }
+	section {}
+	section > article { width: 140%; }
 
 }
 
